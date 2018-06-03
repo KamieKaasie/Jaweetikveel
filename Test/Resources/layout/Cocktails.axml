@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:rowCount="4"
+    android:columnCount="3"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:minWidth="25px"
-    android:minHeight="25px">
-    <GridLayout
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="83.0dp"
-        android:rowCount="1"
-        android:columnCount="3"
-        android:id="@+id/gridLayout1"
-        android:layout_marginBottom="14.0dp" />
-</LinearLayout>
+    android:layout_height="match_parent">
+    <Button
+        android:layout_row="0"
+        android:layout_column="1"
+        android:text="Button"
+        android:id="@+id/button1" />
+    <ImageButton
+        android:layout_row="0"
+        android:layout_column="2"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:id="@+id/imageButton1" />
+    <ImageView
+        android:layout_row="0"
+        android:layout_column="0"
+        android:src="@drawable/bloody_mary"
+        android:id="@+id/imageView1" />
+</GridLayout>
