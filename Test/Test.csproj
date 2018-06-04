@@ -59,6 +59,7 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cocktail.cs" />
     <Compile Include="Cocktails.cs" />
     <Compile Include="CreateAccount.cs" />
     <Compile Include="LoggIn.cs" />

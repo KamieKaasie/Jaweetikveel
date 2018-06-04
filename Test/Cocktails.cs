@@ -9,6 +9,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using System.IO;
+using SQLite;
 
 namespace Test
 {
@@ -21,6 +23,7 @@ namespace Test
 
             // Create your application here
             SetContentView(Resource.Layout.Cocktails);
+            string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "dbUser.db3");
         }
     }
 }
