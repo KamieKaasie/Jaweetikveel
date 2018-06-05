@@ -24,6 +24,14 @@ namespace Test
             // Create your application here
             SetContentView(Resource.Layout.Cocktails);
             string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "dbUser.db3");
+            var db = new SQLiteConnection(dbPath);
+            var table = db.Table<Cocktail>();
+            Cocktail sex_on_the_beach = new Cocktail();
+            sex_on_the_beach.Id = 1;
+            sex_on_the_beach.Name = "Sex on the beach";
+            sex_on_the_beach.Desc = "De Sex on the Beach is een heerlijke zomerse cocktail die gemaakt is van vodka, perziktree likeur, sinaasappelsap en cranberrysap.";
+            sex_on_the_beach.Instr = "stap 1: 30ml vodka in glas, stap 2: 15ml perzik liqeur in glas, stap 3: 60ml sinaasappelsap in glas, stap 4: vul cranberrysap toe tot rand glas";
+
         }
     }
 }

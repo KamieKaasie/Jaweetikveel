@@ -19,5 +19,6 @@ namespace Test
         public string Desc { get; set; }
         public string Instr { get; set; }
         public string Ingr { get; set; }
+        public int Glas { get; set; }
     }
 }
