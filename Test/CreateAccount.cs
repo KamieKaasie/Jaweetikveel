@@ -30,7 +30,6 @@ namespace Test
             var edtConf = FindViewById<EditText>(Resource.Id.edTxtConfPassword);
             var btnCreate = FindViewById<Button>(Resource.Id.btnCreateAccount);
             string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "dbUser.db3");
-            image1.Image = UIImage.FromBundle("coctail-logo.png");
 
             btnCreate.Click += delegate
             {
