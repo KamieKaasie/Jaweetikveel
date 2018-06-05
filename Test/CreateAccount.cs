@@ -24,11 +24,13 @@ namespace Test
             // Create your application here
             SetContentView(Resource.Layout.CreateAccount);
 
+            var image1 = FindViewById<ImageView>(Resource.Id.imageView1);
             var edtUser = FindViewById<EditText>(Resource.Id.edTxtUserName);
             var edtPass = FindViewById<EditText>(Resource.Id.edTxtPassword);
             var edtConf = FindViewById<EditText>(Resource.Id.edTxtConfPassword);
             var btnCreate = FindViewById<Button>(Resource.Id.btnCreateAccount);
             string dbPath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "dbUser.db3");
+            image1.Image = UIImage.FromBundle("coctail-logo.png");
 
             btnCreate.Click += delegate
             {
