@@ -101,6 +101,7 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\drawable\coctail-logo.png" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="sqlite-net-pcl">
